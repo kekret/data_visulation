@@ -21,8 +21,8 @@ y_axis = st.selectbox('select element 2', el_list)
 
 p = figure(
     title='Element Plot',
-    x_axis_label= el from st.selectbox + ' wt%',
-    y_axis_label= el2 from st.selectbox + ' wt%')
+    x_axis_label= 'select element' from st.selectbox + ' wt%',
+    y_axis_label= 'select element 2' from st.selectbox + ' wt%')
 
 x = df['Mg']/10000
 y = df['Si']/10000
