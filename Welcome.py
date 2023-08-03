@@ -24,8 +24,8 @@ y = df['Si']/10000
 
 p = figure(
     title='Element Plot',
-    x_axis_label= 'x',
-    y_axis_label= 'y')
+    x_axis_label= select element + ' wt%',
+    y_axis_label= select element 2 + ' wt%')
 
 p.circle(x, y, size =10)
 
