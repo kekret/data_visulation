@@ -12,7 +12,7 @@ st.write ('Hello Word')
 
 st.multiselect('select location', file_name_list, file_name_list[0])
 
-df = pd.read_csv('file_name_list[0].csv')
+df = pd.read_csv('Bastar Craton.csv')
 st.dataframe(df)
 
 el_list = df.columns.tolist()[27:80]
