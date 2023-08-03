@@ -27,7 +27,7 @@ p = figure(
     x_axis_label= 'x',
     y_axis_label= 'y')
 
-p.plot(x, y)
+p.circle(x, y)
 
 st.bokeh_chart(p, use_container_width=True)
 
