@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from bokeh.plotting import figure
 import os
 
 file_name_list = []
@@ -11,8 +12,6 @@ st.write ('Hello Word')
 
 df = pd.read_csv('Bastar Craton.csv')
 st.dataframe(df)
-
-from bokeh.plotting import figure
 
 x = [1, 2, 3, 4, 5]
 y = [6, 7, 2, 4, 5]
