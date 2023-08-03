@@ -27,7 +27,7 @@ p = figure(
     x_axis_label= 'x',
     y_axis_label= 'y')
 
-p.line(x, y, legend_label='Trend')
+p.line(x, y)
 
 st.bokeh_chart(p, use_container_width=True)
 
