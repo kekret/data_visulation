@@ -27,8 +27,8 @@ el2 = 'select element 2'
 
 p = figure(
     title='Element Plot',
-    x_axis_label= 'el' + ' wt%',
-    y_axis_label= 'el2' + ' wt%')
+    x_axis_label= el + ' wt%',
+    y_axis_label= el2 + ' wt%')
 
 p.circle(x, y, size =10)
 
