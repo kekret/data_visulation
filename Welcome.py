@@ -19,16 +19,13 @@ el_list = df.columns.tolist()[27:80]
 x_axis = st.selectbox('select element', el_list)
 y_axis = st.selectbox('select element 2', el_list)
 
-x = df['Mg']/10000
-y = df['Si']/10000
-
-el = ('select element', el_list)
-el2 = ('select element 2', el_list)
-
 p = figure(
     title='Element Plot',
-    x_axis_label= el + ' wt%',
-    y_axis_label= el2 + ' wt%')
+    x_axis_label= el from st.selectbox + ' wt%',
+    y_axis_label= el2 from st.selectbox + ' wt%')
+
+x = df['Mg']/10000
+y = df['Si']/10000
 
 p.circle(x, y, size =10)
 
