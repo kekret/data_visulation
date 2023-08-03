@@ -22,10 +22,13 @@ y_axis = st.selectbox('select element 2', el_list)
 x = df['Mg']/10000
 y = df['Si']/10000
 
+el = select element
+el2 = select element 2
+
 p = figure(
     title='Element Plot',
-    x_axis_label= 'Mg' + ' wt%',
-    y_axis_label= 'Si' + ' wt%')
+    x_axis_label= 'el' + ' wt%',
+    y_axis_label= 'el2' + ' wt%')
 
 p.circle(x, y, size =10)
 
