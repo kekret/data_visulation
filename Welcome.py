@@ -23,8 +23,8 @@ y = [6, 7, 2, 4, 5]
 
 p = figure(
     title='simple line example',
-    x_axis_label='el_list[]',
-    y_axis_label='el_list[]')
+    x_axis_label= df.columns.tolist()[27:80],
+    y_axis_label= df.columns.tolist()[27:80])
 
 p.line(x, y, legend_label='Trend', line_width=2)
 
