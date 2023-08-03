@@ -1,2 +1,3 @@
 pandas
 matplotlib
+bokey == 2.4.3
