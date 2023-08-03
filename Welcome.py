@@ -19,8 +19,8 @@ y_axis = st.selectbox('select element 2', el_list)
 
 st.multiselect('select location', file_name_list, file_name_list[0])
 
-x = el_list[]
-y = el_list[]
+x = df.columns.tolist()[27:80]
+y = df.columns.tolist()[27:80]
 
 p = figure(
     title='simple line example',
