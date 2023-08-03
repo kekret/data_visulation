@@ -1,6 +1,17 @@
 import streamlit as st
 import pandas as pd
 import os
+
+file_name_list = []
+for i in os.listdir():
+  if i.endswith('csv'):
+    file_name_list.append(i)
+
+st.write ('Hello Word')
+
+df = pd.read_csv('Bastar Craton.csv')
+st.dataframe(df)
+
 from bokeh.plotting import figure
 
 x = [1, 2, 3, 4, 5]
@@ -14,16 +25,6 @@ p = figure(
 p.line(x, y, legend_label='Trend', line_width=2)
 
 st.bokeh_chart(p, use_container_width=True)
-
-file_name_list = []
-for i in os.listdir():
-  if i.endswith('csv'):
-    file_name_list.append(i)
-
-st.write ('Hello Word')
-
-df = pd.read_csv('Bastar Craton.csv')
-st.dataframe(df)
 
 el_list = df.columns.tolist()[27:80]
 x_axis = st.selectbox('select element', el_list)
