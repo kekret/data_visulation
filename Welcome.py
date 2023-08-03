@@ -10,14 +10,14 @@ for i in os.listdir():
 
 st.write ('Hello Word')
 
-df = pd.read_csv('Bastar Craton.csv')
+st.multiselect('select location', file_name_list, file_name_list[0])
+
+df = pd.read_csv('file_name_list.csv')
 st.dataframe(df)
 
 el_list = df.columns.tolist()[27:80]
 x_axis = st.selectbox('select element', el_list)
 y_axis = st.selectbox('select element 2', el_list)
-
-st.multiselect('select location', file_name_list, file_name_list[0])
 
 x = df['Mg']/10000
 y = df['Si']/10000
