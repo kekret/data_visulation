@@ -23,7 +23,7 @@ x = df['Mg']
 y = df['Si']
 
 p = figure(
-    title='simple line example',
+    title='Element Plot',
     x_axis_label= 'x',
     y_axis_label= 'y')
 
